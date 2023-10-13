@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <meta charset="utf-8">
+            <title>Pola tekstowe i wynik</title>
+        </head>
+    <body>
+        <h1>Kalkulator mnożenia</h1> <br>
+
+        <!--Wprowadzamy 2 pola na tekst id=do późniejszego odniesienia |rows=wiersze |cols=kolumny-->
+        <input type="number" id="ide" rows="1" cols="6" class="poleTekstowe"></input>
+        *
+        <input type="number" id="idee" rows="1" cols="6" class="poleTekstowe"></input>
+        =
+        <output type="output" id="wynik" rows="1" cols="6" class="poleTekstowe"></output>
+
+        <p>
+            Kliknij przycisk by wyświetlić wynik. 
+            <!--Ustawiamy przycisk który wykonuje funkcje przy kliknięciu |onclick="mnożenie()"-->
+            <button type="button" onclick="mnożenie()">Wyświetl wynik</button>
+        </p>
+
+        <script>
+            function mnożenie() {
+            var x = document.getElementById("ide").value;
+            var y = document.getElementById("idee").value;
+                document.getElementById("wynik").innerHTML = ('Wynik to '+ x*y);
+            }
+        </script>
+
+    </body>
+    <!--Zrobione Przez użytkownika Oskarro1, https://github.com/Oskarro1-->
+</html>
